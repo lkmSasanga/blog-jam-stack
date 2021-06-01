@@ -1,13 +1,16 @@
 import Link from "next/link";
+import Layout from "../components/layout/Layout";
 
 export default function Post({ post }) {
   return (
-    <div>
-      <Link href="/">
-        <a>Go Home</a>
-      </Link>
-      <h2>{post.Title}</h2>
-    </div>
+    <Layout>
+      <div>
+        <Link href="/">
+          <a>Go Home</a>
+        </Link>
+        <h2>{post.Title}</h2>
+      </div>
+    </Layout>
   );
 }
 
