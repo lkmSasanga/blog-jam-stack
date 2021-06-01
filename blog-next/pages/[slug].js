@@ -1,5 +1,5 @@
 export default function Post({ post }) {
-  return <div>{post.Title}</div>;
+  return <div> {post.Title} </div>;
 }
 
 // tell next.js how many pages there are
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 

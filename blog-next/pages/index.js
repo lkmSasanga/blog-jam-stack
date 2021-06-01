@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home({ posts }) {
   console.log("i am on the client");
 
