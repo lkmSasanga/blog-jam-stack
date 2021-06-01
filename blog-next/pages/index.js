@@ -8,6 +8,7 @@ export default function Home({ posts }) {
         posts.map((post) => (
           <div key={post.id}>
             <h2>{post.Title}</h2>
+            <div>{post.User.username}</div>
           </div>
         ))}
     </div>
