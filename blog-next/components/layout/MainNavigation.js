@@ -8,10 +8,13 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/"> About </Link>{" "}
+            <Link href="/"> Home </Link>{" "}
           </li>{" "}
           <li>
-            <Link href="/new-meetup"> Contact </Link>{" "}
+            <Link href="/about"> About </Link>{" "}
+          </li>{" "}
+          <li>
+            <Link href="/contact"> Contact </Link>{" "}
           </li>{" "}
         </ul>{" "}
       </nav>{" "}
