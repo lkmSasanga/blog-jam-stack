@@ -5,10 +5,8 @@ export default function Post({ post }) {
   return (
     <Layout>
       <div>
-        {/* <Link href="/">
-          <a>Go Home</a>
-        </Link> */}
         <h2>{post.Title}</h2>
+        <div>{post.Content}</div>
       </div>
     </Layout>
   );

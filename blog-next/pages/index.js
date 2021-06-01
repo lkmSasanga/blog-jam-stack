@@ -1,4 +1,5 @@
 import Layout from "../components/layout/Layout";
+import Card from "../components/ui/Card";
 import Link from "next/link";
 
 export default function Home({ posts }) {
@@ -12,7 +13,7 @@ export default function Home({ posts }) {
           posts.map((post) => (
             <Link href={`/${post.Slug}`} key={post.id}>
               <a>
-                <h2>{post.Title}</h2>
+                <h2 style={{paddingTop: '20px'}}>{post.Title}</h2>
                 <div>{post.User.username}</div>
               </a>
             </Link>
