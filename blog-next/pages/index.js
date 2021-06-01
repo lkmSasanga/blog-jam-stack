@@ -8,10 +8,12 @@ export default function Home({ posts }) {
       {/* loop over the posts and show */}
       {posts &&
         posts.map((post) => (
-          <div key={post.id}>
-            <h2>{post.Title}</h2>
-            <div>{post.User.username}</div>
-          </div>
+          <Link href={`/${post.Slug}`} key={post.id}>
+            <a>
+              <h2>{post.Title}</h2>
+              <div>{post.User.username}</div>
+            </a>
+          </Link>
         ))}
     </div>
   );

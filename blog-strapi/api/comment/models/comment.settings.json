@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "comments",
   "info": {
-    "name": "Posts",
-    "description": ""
+    "name": "Comment"
   },
   "options": {
     "increments": true,
@@ -12,23 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
     "Content": {
       "type": "richtext"
     },
-    "Slug": {
-      "type": "string"
+    "post": {
+      "model": "posts",
+      "via": "comments"
     },
-    "User": {
+    "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "posts"
-    },
-    "comments": {
-      "via": "post",
-      "collection": "comment"
+      "via": "comments"
     }
   }
 }
