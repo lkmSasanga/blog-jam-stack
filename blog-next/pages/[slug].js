@@ -5,9 +5,10 @@ export default function Post({ post }) {
   return (
     <Layout>
       <div>
-        <h2>{post.Title}</h2>
-        <div>{post.Content}</div>
-      </div>
+        <h2> {post.Title} </h2> 
+        <p> {post.published_at} </p>{" "}
+        <div> {post.Content} </div>{" "}
+      </div>{" "}
     </Layout>
   );
 }

@@ -14,7 +14,7 @@ export default function Home({ posts }) {
             <Link href={`/${post.Slug}`} key={post.id}>
               <a>
                 <h2 style={{paddingTop: '20px'}}>{post.Title}</h2>
-                <div>{post.User.username}</div>
+                <p>@{post.User.username}</p>
               </a>
             </Link>
           ))}
